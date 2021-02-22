@@ -2,37 +2,60 @@
  https://javascript.info/introduction-browser-events */
 
 /* || General setup */
-
-/* html, body {
-    margin: 0;
-    padding: 0;
-}
-  
-html {
-    font-size: 10px;
-  
-}
   
 body {
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-    background-color: #44bfe4;
-} */
-
+    background: yellow;
+}
 
 /* || Carousel setup */
+.carousel {
+    left: 35%;
+    width: 400px;
+    padding: 10px 40px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background: black;
+    position: relative;
+}
+
+.carousel img {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.gallery {
+    width: 390px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
 
 .arrow {
     padding: 0;
-    background: #ddd;
+    top: 60px;
     border-radius: 15px;
     border: 1px solid gray;
     font-size: 24px;
     line-height: 24px;
     color: #444;
     display: block;
+    background: #ddd;
+    position: absolute;
 }
+
 .arrow:focus {
     outline: none;
 }
@@ -41,25 +64,10 @@ body {
     cursor: pointer;
 }
 
-ul {
-    height: 130px;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
+.left {
+    left: 7px;
 }
 
-ul img {
-    width: 130px;
-    height: 130px;
-    display: block;
+.right {
+    right: 7px;
 }
-
-ul li {
-    display: inline-block
-}
-
-/* .carousel {} */
-
-/* ul - width 9999px, margin-left: -350px */
