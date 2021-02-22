@@ -43,8 +43,8 @@ body {
 }
 
 .ground {
-    height: 500px;
-    width: 100px;
+    height: 200px;
+    width: 500px;
     background-image: url('bottom-background.png');
     position: absolute;
     top: 580px;
@@ -54,7 +54,7 @@ body {
 .bird {
     height: 60px;
     width: 45px;
-    background-image: url('flappybird-pipe.png');
+    background-image: url('flappy-bird.png');
     position: absolute;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .topObstacle {
-    transform: rotate(180);
+    transform: rotate(180deg);
     height: 60px;
     width: 300px;
     background-image: url('flappybird-pipe.png');

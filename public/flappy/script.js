@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const bird = document.querySelector('.bird')
     const gameDisplay = document.querySelector('.game-container')
     const ground = document.querySelector('.ground')
     
     let birdLeft= 220
     let birdBottom = 100
-    let gravity= 2
+    let gravity= 3
     let isGameOver = false
     let gap = 430
 
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         bird.style.left = birdLeft + 'px'
         bird.style.bottom = birdBottom + 'px'
     }
-    let timerId = setInterval(stertGame, 20)
+    let timerId = setInterval(startGame, 20)
     
     function control(e) {
-        if (e.keyCode == 32) {
+        if (e.keyCode === 32) {
             jump()
         }
     }
