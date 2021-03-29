@@ -43,7 +43,7 @@ body {
 }
 
 .ground {
-    height: 200px;
+    height: 150px;
     width: 500px;
     background-image: url('bottom-background.png');
     position: absolute;
