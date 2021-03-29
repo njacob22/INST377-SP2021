@@ -64,10 +64,10 @@ body {
     cursor: pointer;
 }
 
-.left {
+#left {
     left: 7px;
 }
 
-.right {
+#right {
     right: 7px;
 }
